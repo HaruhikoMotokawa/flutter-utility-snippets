@@ -17,5 +17,9 @@
       }
     ]
   },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/HaruhikoMotokawa/flutter-utility-snippets.git"
+},
   "publisher": "a824b8d0-4695-611e-bd16-4471f56f3fd9"
 }
