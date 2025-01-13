@@ -1,65 +1,112 @@
-# flutter-utility-snippets README
+# Flutter Utility Snippets
 
-This is the README for your extension "flutter-utility-snippets". After writing up a brief description, we recommend including the following sections.
+Flutter Utility Snippets is a VSCode extension that provides a collection of frequently used snippets to enhance development efficiency in Flutter and Dart. This extension includes snippets for:
 
-## Features
+- Flutter: Basic widgets and structures (StatelessWidget, StatefulWidget, Scaffold, etc.)
+- Dart: Classes, enums, loops, conditionals, and async processing
+- Riverpod: Templates for providers, notifiers, and ConsumerWidget
+- Hooks: Support for lifecycle and state management like HookWidget, useEffect, and useState
+- Freezed: Templates for Freezed models and JSON support
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+With this snippet collection, you can speed up your coding process and focus more on building your application.
 
-For example if there is an image subfolder under your extension project workspace:
+## Main Features
+1. Snippet Categories
+- Basic Flutter widgets
+- Core Dart structures and async processing
+- State management templates with Riverpod
+- Lifecycle and state hooks with Flutter Hooks
+- Freezed model generation
+2. How to Use Snippets
+- Open a Dart file in VSCode, type the snippet prefix, and press Tab to expand.
+3. Installation
+- Download and install this extension in VSCode.
+4.Contributing
+- Contributions are welcome! Feel free to submit pull requests to improve or add new snippets.
 
-\!\[feature X\]\(images/feature-x.png\)
+## Snippet List
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### Flutter
+- `fstless`: Generates a StatelessWidget.
+- `fstful`: Generates a StatefulWidget.
+- `fscaffold`: Generates a Scaffold widget.
+- `frow`: Generates a Row widget.
+- `fcolumn`: Generates a Column widget.
+- `fstack`: Generates a Stack widget.
+- `fcontainer`: Generates a Container widget.
+- `fcenter`: Generates a Center widget.
+- `ftext`: Generates a Text widget.
+- `felevated`: Generates an ElevatedButton widget.
+- `ftextbutton`: Generates a TextButton widget.
+- `ficonbutton`: Generates an IconButton widget.
+- `ficon`: Generates an Icon widget.
+- `flisttile`: Generates a ListTile widget.
+- `flisttilefull`: Generates a full ListTile widget with leading, title, subtitle, trailing, and onTap callback.
+- `fsizedboxwidthheight`: Generates a SizedBox with width and height.
+- `fsizedboxwidth`: Generates a SizedBox with width.
+- `fsizedboxheight`: Generates a SizedBox with height.
+- `fsizedboxshrink`: Generates a SizedBox.shrink().
+- `fexpanded`: Generates an Expanded widget.
+- `fflexible`: Generates a Flexible widget.
+- `fpadding`: Generates a Padding widget.
+- `fedgeinsetshorizontal`: Generates EdgeInsets.symmetric(horizontal).
+- `fedgeinsetsvertical`: Generates EdgeInsets.symmetric(vertical).
+- `fedgeinsetsall`: Generates EdgeInsets.all().
+- `fspacer`: Generates a Spacer widget.
+- `fdivider`: Generates a Divider widget.
+- `fimage`: Generates an Image.asset widget.
+- `faddpostframe`: Generates WidgetsBinding.instance.addPostFrameCallback.
 
-## Requirements
+### Dart
+- `dclass`: Generates a Dart class.
+- `denum`: Generates an enum.
+- `denumconstructor`: Generates an enum with a constructor.
+- `dextension`: Generates an extension on a Dart type.
+- `dstring`: Generates the String type.
+- `dlist`: Generates a List<dynamic>.
+- `dset`: Generates a Set<dynamic>.
+- `dmap`: Generates a Map<dynamic, dynamic>.
+- `dfuture`: Generates a Future<void> type.
+- `dstream`: Generates a Stream<dynamic> type.
+- `dvoidmethod`: Generates a void method.
+- `dfuturemethod`: Generates a Future method.
+- `dstreammethod`: Generates a Stream method.
+- `danonfunc`: Generates an anonymous function.
+- `darrowright`: Generates a Dart arrow function (=>).
+- `dif`: Generates an if statement.
+- `difelese`: Generates an if-else statement.
+- `delseif`: Generates an else-if statement.
+- `delse`: Generates an else statement.
+- `dswitch`: Generates a switch statement.
+- `dswitchexpr`: Generates a switch expression.
+- `dfor`: Generates a for loop.
+- `dforin`: Generates a for-in loop.
+- `dwhile`: Generates a while loop.
+- `dtryoncatch`: Generates a try-on-catch block.
+- `dtryoncatchfinally`: Generates a try-on-catch-finally block.
+- `dcallback`: Generates a callback function definition.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### Riverpod
+- `rkeepalive`: Generates a @Riverpod(keepAlive: true) annotation.
+- `rprovider`: Generates a Riverpod Provider template.
+- `rasyncprovider`: Generates a Riverpod Async Provider template.
+- `rstreamprovider`: Generates a Riverpod Stream Provider template.
+- `rnotifier`: Generates a Notifier class template.
+- `rfuturenotifier`: Generates a Future Notifier template.
+- `rstreamnotifier`: Generates a Stream Notifier template.
+- `rlisten`: Generates a ref.listen template.
+- `rconsumerwidget`: Generates a ConsumerWidget template.
+- `rconsumer`: Generates a Consumer widget.
+- `rhookconsumer`: Generates a HookConsumer widget.
 
-## Extension Settings
+### Hooks
+- `hhookwidget`: Generates a HookWidget template.
+- `huseeffect`: Generates a useEffect template.
+- `husestate`: Generates a useState template.
+- `husetextcontroller`: Generates a useTextEditingController template.
+- `huseonapplifecycle`: Generates a useOnAppLifecycleStateChange template.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Freezed
+- `@fmodel`: Generates a Freezed model.
+- `@fjson`: Generates a Freezed model with JSON serialization support.
+- `@fstate`: Generates a Freezed state template.
