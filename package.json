@@ -1,7 +1,7 @@
 {
   "name": "flutter-utility-snippets",
   "displayName": "Flutter Utility Snippets",
-  "description": "“An efficient snippet collection for Flutter and Dart development. Easily insert frequently used code with convenience.”",
+  "description": "An efficient snippet collection for Flutter and Dart development. Easily insert frequently used code with convenience.",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.96.0"
