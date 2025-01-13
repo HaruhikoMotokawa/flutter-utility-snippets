@@ -1,1 +1,761 @@
-{}
+{
+    //
+    // INFO: FlutterのWidgetを作成するスニペットコード ======================================================
+    //
+    "Flutter Stateless Widget": {
+      "prefix": "fstless",
+      "body": [
+        "import 'package:flutter/material.dart';",
+        "",
+        "class ${1:Example} extends StatelessWidget {",
+        "  const ${1:Example}({super.key});",
+        "",
+        "  @override",
+        "  Widget build(BuildContext context) {",
+        "    return Placeholder();",
+        "  }",
+        "}",
+        ""
+      ],
+    },
+    "Flutter Stateful Widget": {
+      "prefix": "fstful",
+      "body": [
+        "import 'package:flutter/material.dart';",
+        "",
+        "class ${1:Example} extends StatefulWidget {",
+        "  const ${1:Example}({super.key});",
+        "",
+        "  @override",
+        "  State<${1:Example}> createState() => _${1:Example}State();",
+        "}",
+        "",
+        "class _${1:Example}State extends State<${1:Example}> {",
+        "  @override",
+        "  Widget build(BuildContext context) {",
+        "    return Placeholder();",
+        "  }",
+        "}",
+        ""
+      ],
+    },
+    "Flutter Scaffold Widget": {
+      "prefix": "fscaffold",
+      "body": [
+        "Scaffold(",
+        "  body: ${1:Placeholder()},",
+        ");"
+      ],
+    },
+    "Flutter Center Widget": {
+      "prefix": "fcenter",
+      "body": [
+        "Center(",
+        "  child: ${1:Placeholder()},",
+        ")"
+      ],
+    },
+    "Flutter Column Widget": {
+      "prefix": "fcolumn",
+      "body": [
+        "Column(",
+        "  children: [",
+        "    ${1:Placeholder()},",
+        "  ],",
+        ")"
+      ],
+    },
+    "Flutter Row Widget": {
+      "prefix": "frow",
+      "body": [
+        "Row(",
+        "  children: [",
+        "    ${1:Placeholder()},",
+        "  ],",
+        ")"
+      ],
+    },
+    "Flutter Stack Widget": {
+      "prefix": "fstack",
+      "body": [
+        "Stack(",
+        "  children: [",
+        "    ${1:Placeholder()},",
+        "  ],",
+        ")"
+      ],
+    },
+    "Flutter Container Widget": {
+      "prefix": "fcontainer",
+      "body": [
+        "Container(",
+        "  child: ${1:Placeholder()},",
+        ")"
+      ],
+    },
+    "Flutter Text Widget": {
+      "prefix": "ftext",
+      "body": [
+        "Text('${1:Text}')"
+      ],
+    },
+    "Flutter ElevatedButton Widget": {
+      "prefix": "felevated",
+      "body": [
+        "ElevatedButton(",
+        "  onPressed: () {},",
+        "  child: Text('${2:Button}'),",
+        ")"
+      ],
+    },
+    "Flutter TextButton Widget": {
+      "prefix": "ftextbutton",
+      "body": [
+        "TextButton(",
+        "  onPressed: () {},",
+        "  child: Text('${2:Button}'),",
+        ")"
+      ],
+    },
+    "Flutter IconButton Widget": {
+      "prefix": "ficonbutton",
+      "body": [
+        "IconButton(",
+        "  onPressed: () {},",
+        "  icon: Icon(Icons.${1:add}),",
+        ")"
+      ],
+    },
+    "Flutter Icon Widget": {
+      "prefix": "ficon",
+      "body": [
+        "Icon(Icons.${1:add})"
+      ],
+    },
+    "Flutter ListTile Widget": {
+      "prefix": "flisttile",
+      "body": [
+        "ListTile(",
+        "  title: Text('${1:Title}'),",
+        ")"
+      ],
+    },
+    "Flutter ListTileFull Widget": {
+      "prefix": "flisttilefull",
+      "body": [
+        "ListTile(",
+        "  leading: Icon(Icons.person),",
+        "  title: Text('Title'),",
+        "  subtitle: Text('Subtitle'),",
+        "  trailing: Icon(Icons.arrow_forward),",
+        "  onTap: () {},",
+        ");"
+      ]
+    },
+    "Flutter SizedBox Width Height Widget": {
+      "prefix": "fsizedboxwidthheight",
+      "body": [
+        "SizedBox(width: ${1:10.0}, height: ${2:10.0})"
+      ],
+    },
+    "Flutter SizedBox Width Widget": {
+      "prefix": "fsizedboxwidth",
+      "body": [
+        "SizedBox(width: ${1:10.0})"
+      ],
+    },
+    "Flutter SizedBox Height Widget": {
+      "prefix": "fsizedboxheight",
+      "body": [
+        "SizedBox(height: ${1:10.0})"
+      ],
+    },
+    "Flutter SizedBoxShrink Widget": {
+      "prefix": "fsizedboxshrink",
+      "body": [
+        "SizedBox.shrink()"
+      ],
+    },
+    "Flutter Expanded Widget": {
+      "prefix": "fexpanded",
+      "body": [
+        "Expanded(",
+        "  child: ${1:Placeholder()},",
+        ")"
+      ],
+    },
+    "Flutter Flexible Widget": {
+      "prefix": "fflexible",
+      "body": [
+        "Flexible(",
+        "  child: ${1:Placeholder()},",
+        ")"
+      ],
+    },
+    "Flutter Padding Widget": {
+      "prefix": "fpadding",
+      "body": [
+        "Padding(",
+        "  padding: EdgeInsets.all(${1:8.0}),",
+        "  child: ${2:Placeholder()},",
+        ")"
+      ],
+    },
+    "Flutter EdgeInsets.symmetric Horizontal": {
+      "prefix": "fedgeinsetshorizontal",
+      "body": [
+        "EdgeInsets.symmetric(horizontal: ${1:8.0})"
+      ],
+    },
+    "Flutter EdgeInsets.symmetric Vertical": {
+      "prefix": "fedgeinsetsvertical",
+      "body": [
+        "EdgeInsets.symmetric(vertical: ${1:8.0})"
+      ],
+    },
+    "Flutter EdgeInsets.all": {
+      "prefix": "fedgeinsetsall",
+      "body": [
+        "EdgeInsets.all(${1:8.0})"
+      ],
+    },
+    "Flutter Spacer Widget": {
+      "prefix": "fspacer",
+      "body": [
+        "Spacer()"
+      ],
+    },
+    "Flutter Divider Widget": {
+      "prefix": "fdivider",
+      "body": [
+        "Divider()"
+      ],
+    },
+    "Flutter Image Widget": {
+      "prefix": "fimage",
+      "body": [
+        "Image.asset('${1:assets/image.jpg}')"
+      ],
+    },
+    "Flutter AddPostFrameCallback": {
+      "prefix": "faddpostframe",
+      "body": [
+        "WidgetsBinding.instance.addPostFrameCallback((_) {",
+        "$0",
+        "});",
+      ],
+      "description": "WidgetsBinding.instance.addPostFrameCallbackのテンプレート"
+    },
+    // INFO: Dartに関するスニペットコード ================================================================
+    "Dart Class": {
+      "prefix": "dclass",
+      "body": [
+        "class ${1:Example} {",
+        "",
+        "}",
+        ""
+      ]
+    },
+    "Dart Enum": {
+      "prefix": "denum",
+      "body": [
+        "enum ${1:Example} {",
+        "",
+        "}",
+        ""
+      ]
+    },
+    "Enum with Constructor": {
+      "prefix": "denumconstructor",
+      "body": [
+        "enum ${1:Example} {",
+        "  first('first'),",
+        "  second('second');",
+        "",
+        "  const ${1:Example}(this.text);",
+        "",
+        "  final String text;",
+        "}",
+        ""
+      ]
+    },
+    "Dart Extension": {
+      "prefix": "dextension",
+      "body": [
+        "extension ${1:ExtensionName} on ${2:Type} {",
+        "",
+        "}",
+        ""
+      ]
+    },
+    "Dart String": {
+      "prefix": "dstring",
+      "body": [
+        "String"
+      ],
+      "description": "dsg と入力すると String 素早くが出力できます"
+    },
+    //
+    // intとdouble,dynamic,Objectは普通に入力したほうが早いのでスニペットコードは作成しません
+    //
+    "Dart List": {
+      "prefix": "dlist",
+      "body": [
+        "List<${1:dynamic}>"
+      ]
+    },
+    "Dart Set": {
+      "prefix": "dset",
+      "body": [
+        "Set<${1:dynamic}>"
+      ]
+    },
+    "Dart Map": {
+      "prefix": "dmap",
+      "body": [
+        "Map<${1:dynamic}, ${2:dynamic}>"
+      ]
+    },
+    "Dart Future": {
+      "prefix": "dfuture",
+      "body": [
+        "Future<${1:void}>"
+      ]
+    },
+    "Dart Stream": {
+      "prefix": "dstream",
+      "body": [
+        "Stream<${1:dynamic}>"
+      ]
+    },
+    "Dart Void Method": {
+      "prefix": "dvoidmethod",
+      "body": [
+        "void ${1:methodName}() {",
+        "",
+        "}",
+        ""
+      ]
+    },
+    "Dart Future Method": {
+      "prefix": "dfuturemethod",
+      "body": [
+        "Future<${1:void}> ${2:methodName}() async {",
+        "",
+        "}",
+        ""
+      ]
+    },
+    "Dart Stream Method": {
+      "prefix": "dstreammethod",
+      "body": [
+        "Stream<${1:dynamic}> ${2:methodName}() async* {",
+        "",
+        "}",
+        ""
+      ]
+    },
+    "Dart Anonymous Function": {
+      "prefix": "danonfunc",
+      "body": [
+        "() {",
+        "  $0",
+        "}",
+        "",
+      ],
+      "description": "無名関数を作成"
+    },
+    "Dart Arrow Right Side": {
+      "prefix": "darrowright",
+      "body": [
+        "=> ${1:expression}",
+      ],
+      "description": "アロー関数の右側を作成"
+    },
+    "Dart If Statement": {
+      "prefix": "dif",
+      "body": [
+        "if (${1:condition}) {",
+        "  $0",
+        "}",
+        ""
+      ],
+    },
+    "Dart If Else Statement": {
+      "prefix": "difelese",
+      "body": [
+        "if (${1:condition}) {",
+        "  $0",
+        "} else {",
+        "  ",
+        "}",
+        ""
+      ],
+    },
+    "Dart Else If Statement": {
+      "prefix": "delseif",
+      "body": [
+        "else if (${0:condition}) {",
+        "  ",
+        "}",
+        ""
+      ],
+    },
+    "Dart Else Statement": {
+      "prefix": "delse",
+      "body": [
+        "else {",
+        "  ",
+        "}",
+        ""
+      ],
+    },
+    "Dart Switch Statement": {
+      "prefix": "dswitch",
+      "body": [
+        "switch (${1:condition}) {",
+        "  case ${2:value}:",
+        "    $3",
+        "  default:",
+        "    ",
+        "}",
+        ""
+      ],
+    },
+    "Dart Switch Expression": {
+      "prefix": "dswitchexpr",
+      "body": [
+        "final ${1:value} = switch (${2:condition}) {",
+        "  ${3:conditionA} => ${4:0},",
+        "  _ => ${5:1},",
+        "};",
+        ""
+      ]
+    },
+    "Dart For Loop": {
+      "prefix": "dfor",
+      "body": [
+        "for (var ${1:i} = 0; ${1:i} < ${2:count}; ${1:i}++) {",
+        "  $0",
+        "}",
+        ""
+      ],
+    },
+    "Dart For In Loop": {
+      "prefix": "dforin",
+      "body": [
+        "for (var ${1:item} in ${2:items}) {",
+        "  $0",
+        "}",
+        ""
+      ],
+    },
+    "Dart While Loop": {
+      "prefix": "dwhile",
+      "body": [
+        "while (${1:condition}) {",
+        "  $0",
+        "}",
+        ""
+      ],
+    },
+    "Dart Try-On-Catch": {
+      "prefix": "dtryoncatch",
+      "body": [
+        "try {",
+        "",
+        "} on Exception catch (e) {",
+        "  debugPrint(e.toString());",
+        "}",
+        ""
+      ],
+    },
+    "Dart Try-On-Catch-Finally": {
+      "prefix": "dtryoncatchfinally",
+      "body": [
+        "try {",
+        "",
+        "} on Exception catch (e) {",
+        "  debugPrint(e.toString());",
+        "} finally {",
+        "  ",
+        "}",
+        ""
+      ],
+    },
+    "Dart Callback Function": {
+      "prefix": "dcallback",
+      "body": [
+        "final void Function(${1:dynamic} value) ${2:callback};",
+      ],
+    },
+    //
+    // INFO: Riverpod関連のスニペットコード ==============================================================
+    //
+    "Riverpod KeepAlive Annotation": {
+      "prefix": "rkeepalive",
+      "body": [
+        "@Riverpod(keepAlive: true)"
+      ],
+      "description": "Riverpod KeepAliveアノテーションを作成"
+    },
+    "Riverpod Provider Template": {
+      "prefix": "rprovider",
+      "body": [
+        "import 'package:flutter_riverpod/flutter_riverpod.dart';",
+        "import 'package:riverpod_annotation/riverpod_annotation.dart';",
+        "",
+        "part '${TM_FILENAME_BASE}.g.dart';",
+        "",
+        "@riverpod",
+        "${1:dynamic} ${2:exampleProvider}(Ref ref) {",
+        "  return ${3:null};",
+        "}",
+        ""
+      ]
+    },
+    "Riverpod Async Provider Template": {
+      "prefix": "rasyncprovider",
+      "body": [
+        "import 'package:flutter_riverpod/flutter_riverpod.dart';",
+        "import 'package:riverpod_annotation/riverpod_annotation.dart';",
+        "",
+        "part '${TM_FILENAME_BASE}.g.dart';",
+        "",
+        "@riverpod",
+        "Future<${1:dynamic}> ${2:exampleProvider}(Ref ref) async {",
+        "  return ${3:null};",
+        "}",
+        ""
+      ]
+    },
+    "Riverpod Stream Provider Template": {
+      "prefix": "rstreamprovider",
+      "body": [
+        "import 'package:flutter_riverpod/flutter_riverpod.dart';",
+        "import 'package:riverpod_annotation/riverpod_annotation.dart';",
+        "",
+        "part '${TM_FILENAME_BASE}.g.dart';",
+        "",
+        "@riverpod",
+        "Stream<${1:dynamic}> ${2:exampleProvider}(Ref ref) async* {",
+        "  yield ${3:null};",
+        "}",
+        ""
+      ]
+    },
+    "Riverpod Notifier Template": {
+      "prefix": "rnotifier",
+      "body": [
+        "import 'package:riverpod_annotation/riverpod_annotation.dart';",
+        "",
+        "part '${TM_FILENAME_BASE}.g.dart';",
+        "",
+        "@riverpod",
+        "class ${1:ExampleNotifier} extends _$${1:ExampleNotifier} {",
+        "  @override",
+        "  void build() {}",
+        "}",
+        ""
+      ],
+    },
+    "Riverpod Listen Template": {
+      "prefix": "rlisten",
+      "body": [
+        "ref.listen(${1:provider}, (previous, next) {",
+        "  $0",
+        "});",
+        ""
+      ],
+      "description": "Riverpodのref.listenテンプレート"
+    },
+    "Riverpod Future Notifier Template": {
+      "prefix": "rfuturenotifier",
+      "body": [
+        "import 'package:riverpod_annotation/riverpod_annotation.dart';",
+        "",
+        "part '${TM_FILENAME_BASE}.g.dart';",
+        "",
+        "@riverpod",
+        "class ${1:ExampleNotifier} extends _$${1:ExampleNotifier} {",
+        "  @override",
+        "  Future<${2:dynamic}> build() async {",
+        "    return ${3:null};",
+        "  }",
+        "}",
+        ""
+      ],
+      "description": "Riverpod Future Notifierを作成"
+    },
+    "Riverpod Stream Notifier Template": {
+      "prefix": "rstreamnotifier",
+      "body": [
+        "import 'package:riverpod_annotation/riverpod_annotation.dart';",
+        "",
+        "part '${TM_FILENAME_BASE}.g.dart';",
+        "",
+        "@riverpod",
+        "class ${1:ExampleNotifier} extends _$${1:ExampleNotifier} {",
+        "  @override",
+        "  Stream<${2:dynamic}> build() async* {",
+        "    yield ${3:null};",
+        "  }",
+        "}",
+        ""
+      ],
+      "description": "Riverpod Stream Notifierを作成"
+    },
+    "Riverpod ConsumerWidget Template": {
+      "prefix": "rconsumerwidget",
+      "body": [
+        "import 'package:flutter/material.dart';",
+        "import 'package:flutter_riverpod/flutter_riverpod.dart';",
+        "",
+        "class ${1:Example} extends ConsumerWidget {",
+        "  const ${1:Example}({super.key});",
+        "",
+        "  @override",
+        "  Widget build(BuildContext context, WidgetRef ref) {",
+        "    return ${2:Container()};",
+        "  }",
+        "}",
+        ""
+      ],
+    },
+    "Riverpod Consumer Template": {
+      "prefix": "rconsumer",
+      "body": [
+        "Consumer(",
+        "  builder: (context, ref, child) {",
+        "    return ${1:const Placeholder()};",
+        "  },",
+        ");",
+        ""
+      ],
+    },
+    "Riverpod HookConsumer Template": {
+      "prefix": "rhookconsumer",
+      "body": [
+        "HookConsumer(",
+        "  builder: (context, ref, child) {",
+        "    return ${1:const Placeholder()};",
+        "  },",
+        ");",
+        ""
+      ],
+    },
+    //
+    // INFO: Hooks関連のスニペットコード ==============================================================
+    //
+    "Hooks HookWidget Template": {
+      "prefix": "hhookwidget",
+      "body": [
+        "import 'package:flutter/material.dart';",
+        "import 'package:flutter_hooks/flutter_hooks.dart';",
+        "",
+        "class ${1:Example} extends HookWidget {",
+        "  const ${1:Example}({super.key});",
+        "",
+        "  @override",
+        "  Widget build(BuildContext context) {",
+        "    return ${2:Container()};",
+        "  }",
+        "}",
+        ""
+      ],
+    },
+    "Hooks UseEffect Template": {
+      "prefix": "huseeffect",
+      "body": [
+        "useEffect(",
+        "  () {",
+        "    $0",
+        "    return null;",
+        "  },",
+        "  const [],",
+        ");",
+      ],
+    },
+    "Hooks UseState Template": {
+      "prefix": "husestate",
+      "body": [
+        "final ${1:state} = useState(${2:initialValue});",
+      ],
+    },
+    "Hooks UseTextEditingController Template": {
+      "prefix": "husetextcontroller",
+      "body": [
+        "final controller = useTextEditingController();",
+        "final textIsEmpty =",
+        "    useListenableSelector(controller, () => controller.text.isEmpty);",
+        ""
+      ],
+      "description": "useTextEditingControllerとuseListenableSelectorのセットテンプレート"
+    },
+    "Hooks UseOnAppLifecycleStateChange Template": {
+      "prefix": "huseonapplifecycle",
+      "body": [
+        "useOnAppLifecycleStateChange((oldState, newState) async {",
+        "  if (newState == AppLifecycleState.resumed) {",
+        "",
+        "  }",
+        "});",
+        ""
+      ],
+    },
+    //
+    // INFO: Freezed関連のスニペットコード ==============================================================
+    //
+    "Freezed Model Template": {
+      "prefix": "@fmodel",
+      "body": [
+        "import 'package:freezed_annotation/freezed_annotation.dart';",
+        "part '$TM_FILENAME_BASE.freezed.dart';",
+        "",
+        "@freezed",
+        "class $1 with _$$1 {",
+        "  const factory $1({",
+        "    required int data1,",
+        "    required int data2,",
+        "    required int data3,",
+        "  }) = _$1;",
+        "}"
+      ]
+    },
+    "Freezed Model with Json Template": {
+      "prefix": "@fjson",
+      "body": [
+        "import 'package:freezed_annotation/freezed_annotation.dart';",
+        "part '$TM_FILENAME_BASE.freezed.dart';",
+        "part '$TM_FILENAME_BASE.g.dart';",
+        "",
+        "@freezed",
+        "class ${1:Xxx} with _$${1:Xxx} {",
+        "  const factory ${1:Xxx}({",
+        "",
+        "    // required <Type> <field>,",
+        "",
+        "  }) = _${1:Xxx};",
+        "  factory ${1:Xxx}.fromJson(Map<String, dynamic> json) => _$${1:Xxx}FromJson(json);",
+        "}"
+      ]
+    },
+    "Freezed State Template": {
+      "prefix": "@fstate",
+      "body": [
+        "import 'package:freezed_annotation/freezed_annotation.dart';",
+        "",
+        "part '${TM_FILENAME_BASE}.freezed.dart';",
+        "",
+        "@freezed",
+        "class ${1:Example}State with _$${1:Example}State {",
+        "  const factory ${1:Example}State({",
+        "    @Default('${2:}') String ${3:title},",
+        "  }) = _${1:Example}State;",
+        "}",
+        ""
+      ],
+      "description": "ViewModelのStateを作成する。のちにriverpodのNotifierを作成する"
+    },
+  }
+  
