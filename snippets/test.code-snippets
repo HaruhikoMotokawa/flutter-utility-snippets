@@ -1,0 +1,207 @@
+{
+    //
+    // INFO: テスト用のスニペットコード ==============================================================
+    //
+    // prefixの始まりは't'で統一する
+    // テスト用はあえてパッケージごとには分けない
+    "Flutter Unit Test Template with Riverpod": {
+        "prefix": "tunittesttemp",
+        "body": [
+            "import 'package:flutter_test/flutter_test.dart';",
+            "import 'package:hooks_riverpod/hooks_riverpod.dart';",
+            "",
+            "void main() {",
+            "  late ProviderContainer container;",
+            "  ",
+            "  setUp(() {",
+            "    container = ProviderContainer();",
+            "  });",
+            "",
+            "  tearDown(() {",
+            "    container.dispose();",
+            "  });",
+            "",
+            "  group('${TM_DIRECTORY/.*\\/(.*)\\/.*/$1/}_${TM_FILENAME_BASE}_test', () {",
+            "    group('${1:group_name}', () {",
+            "      test('${2:test_name}', () {",
+            "        // Test implementation",
+            "      });",
+            "    });",
+            "  });",
+            "}"
+        ],
+        "description": "A Flutter unit test template with Riverpod support"
+    },
+    "Flutter Widget Test Template with Riverpod": {
+        "prefix": "twidgettesttemp",
+        "body": [
+            "import 'package:flutter/material.dart';",
+            "import 'package:flutter_test/flutter_test.dart';",
+            "import 'package:hooks_riverpod/hooks_riverpod.dart';",
+            "",
+            "void main() {",
+            "  ProviderScope createScope() {",
+            "    return ProviderScope(",
+            "      // observers: [",
+            "      //",
+            "      // ],",
+            "      child: MaterialApp(",
+            "        home: Scaffold(",
+            "          body: Builder(",
+            "            builder: (context) {",
+            "              return const Placeholder();",
+            "            },",
+            "          ),",
+            "        ),",
+            "      ),",
+            "    );",
+            "  }",
+            "",
+            "  setUp(() {",
+            "    //",
+            "  });",
+            "  tearDown(() {",
+            "    //",
+            "  });",
+            "  group('${TM_DIRECTORY/.*\\/(.*)\\/.*/$1/}_${TM_FILENAME_BASE}', () {",
+            "    group('${1:group_name}', () {",
+            "      testWidgets('${2:test_name}', (tester) async {",
+            "        await tester.pumpWidget(createScope());",
+            "      });",
+            "    });",
+            "  });",
+            "}"
+        ],
+        "description": "A Flutter widget test template with Riverpod"
+    },
+    "Flutter Widget Test Template with Patrol and Riverpod": {
+        "prefix": "twidgettestpatroltemp",
+        "body": [
+            "import 'package:flutter/material.dart';",
+            "import 'package:flutter_test/flutter_test.dart';",
+            "import 'package:hooks_riverpod/hooks_riverpod.dart';",
+            "import 'package:patrol_finders/patrol_finders.dart';",
+            "",
+            "void main() {",
+            "  ProviderScope createScope() {",
+            "    return ProviderScope(",
+            "      // observers: [",
+            "      //",
+            "      // ],",
+            "      child: MaterialApp(",
+            "        home: Scaffold(",
+            "          body: Builder(",
+            "            builder: (context) {",
+            "              return const Placeholder();",
+            "            },",
+            "          ),",
+            "        ),",
+            "      ),",
+            "    );",
+            "  }",
+            "",
+            "  setUp(() {",
+            "    //",
+            "  });",
+            "  tearDown(() {",
+            "    //",
+            "  });",
+            "  group('${TM_DIRECTORY/.*\\/(.*)\\/.*/$1/}_${TM_FILENAME_BASE}', () {",
+            "    group('${1:group_name}', () {",
+            "      patrolWidgetTest('${2:test_name}', ($) async {",
+            "        await $.pumpWidget(createScope());",
+            "      });",
+            "    });",
+            "  });",
+            "}"
+        ],
+        "description": "A Flutter widget test template with Patrol and Riverpod"
+    },
+    "Flutter Test Group Template": {
+        "prefix": "tgroup",
+        "body": [
+            "group('${1:group_name}', () {",
+            "  $0",
+            "});",
+        ],
+        "description": "A Flutter test group template"
+    },
+    "Flutter Test Template": {
+        "prefix": "ttest",
+        "body": [
+            "test('${1:test_name}', () async {",
+            "  // Test implementation",
+            "});",
+        ],
+        "description": "A Flutter test template"
+    },
+    "Flutter Test Widgets Template": {
+        "prefix": "twidgets",
+        "body": [
+            "testWidgets('${1:test_name}', (tester) async {",
+            "  // Test implementation",
+            "});",
+        ],
+        "description": "A Flutter testWidgets template"
+    },
+    "Flutter Test Widgets Patrol Template": {
+        "prefix": "twidgetspatrol",
+        "body": [
+            "patrolWidgetTest('${1:test_name}', ($) async {",
+            "  // Test implementation",
+            "});",
+        ],
+        "description": "A Flutter patrolWidgetTest template"
+    },
+    "Patrol runAsync Template": {
+        "prefix": "trunasyncpatrol",
+        "body": [
+            "await $.tester.runAsync(() async {",
+            "   // Your code here",
+            "});"
+        ],
+        "description": "Run async operations using Patrol's runAsync method"
+    },
+    "testWidgets runAsync Template": {
+        "prefix": "trunasynctestwidgets",
+        "body": [
+            "await tester.runAsync(() async {",
+            "  ${0:// Your code here}",
+            "});"
+        ],
+        "description": "Run async operations using testWidgets' runAsync method"
+    },
+    "Patrol Tester Template": {
+        "prefix": "tpatroltester",
+        "body": [
+            "await $(${1:class_name})"
+        ],
+        "description": "Patrol tester basic usage"
+    },
+    "Tester Template": {
+        "prefix": "ttester",
+        "body": [
+            "await tester.${1:method_name}"
+        ],
+        "description": "Flutter tester basic usage"
+    },
+    "MockSpec Template": {
+        "prefix": "tmockspec",
+        "body": [
+            "MockSpec<${1:class_name}>(),"
+        ],
+        "description": "Create a MockSpec instance for mocking a class"
+    },
+    "Mock Class Template": {
+        "prefix": "tmockclass",
+        "body": [
+            "import 'package:mockito/mockito.dart';",
+            "",
+            "class _TestMock extends Mock {",
+            "  void testMethod();",
+            "}",
+            "",
+        ],
+        "description": "Create a mock class with mockito"
+    }
+}

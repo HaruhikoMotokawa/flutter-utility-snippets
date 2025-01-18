@@ -2,6 +2,7 @@
     //
     // INFO: Riverpod関連のスニペットコード ==============================================================
     //
+    // prefixの始まりは'r'で統一する
     "Riverpod KeepAlive Annotation": {
         "prefix": "rkeepalive",
         "body": [
@@ -22,7 +23,18 @@
             "  return ${3:null};",
             "}",
             ""
-        ]
+        ],
+        "description": "Riverpod provider template"
+    },
+    "Simple Riverpod Provider Template": {
+        "prefix": "rprovidernoimport",
+        "body": [
+            "@riverpod",
+            "${1:dynamic} ${2:exampleProvider}(Ref ref) {",
+            "  return ${3:null};",
+            "}"
+        ],
+        "description": "Simplified Riverpod provider template without imports and part directive"
     },
     "Riverpod Async Provider Template": {
         "prefix": "rasyncprovider",
@@ -37,7 +49,18 @@
             "  return ${3:null};",
             "}",
             ""
-        ]
+        ],
+        "description": "Riverpod async provider template"
+    },
+    "Simple Riverpod Async Provider Template": {
+        "prefix": "rasyncprovidernoimport",
+        "body": [
+            "@riverpod",
+            "Future<${1:dynamic}> ${2:exampleProvider}(Ref ref) async {",
+            "  return ${3:null};",
+            "}"
+        ],
+        "description": "Simplified Riverpod async provider template without imports and part directive"
     },
     "Riverpod Stream Provider Template": {
         "prefix": "rstreamprovider",
@@ -52,7 +75,18 @@
             "  yield ${3:null};",
             "}",
             ""
-        ]
+        ],
+        "description": "Riverpod stream provider template"
+    },
+    "Simple Riverpod Stream Provider Template": {
+        "prefix": "rstreamprovidernoimport",
+        "body": [
+            "@riverpod",
+            "Stream<${1:dynamic}> ${2:exampleProvider}(Ref ref) async* {",
+            "  yield ${3:null};",
+            "}"
+        ],
+        "description": "Simplified Riverpod stream provider template without imports and part directive"
     },
     "Riverpod Notifier Template": {
         "prefix": "rnotifier",
@@ -68,6 +102,7 @@
             "}",
             ""
         ],
+        "description": "Riverpod notifier template"
     },
     "Riverpod Listen Template": {
         "prefix": "rlisten",
@@ -142,6 +177,7 @@
             ");",
             ""
         ],
+        "description": "RiverpodのConsumerを作成"
     },
     "Riverpod HookConsumer Template": {
         "prefix": "rhookconsumer",
@@ -153,5 +189,13 @@
             ");",
             ""
         ],
+        "description": "RiverpodのHookConsumerを作成"
+    },
+    "Riverpod WidgetRef Template": {
+        "prefix": "rwidgetref",
+        "body": [
+            "WidgetRef ref",
+        ],
+        "description": "RiverpodのWidgetRefを作成"
     },
 }

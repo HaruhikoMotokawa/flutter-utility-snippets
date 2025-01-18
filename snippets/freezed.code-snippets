@@ -2,6 +2,8 @@
     //
     // INFO: Freezed関連のスニペットコード ==============================================================
     //
+    // prefixの始まりは'@f'で統一する
+    // 'f'だとflutterのスニペットと被るため
     "Freezed Model Template": {
         "prefix": "@fmodel",
         "body": [
