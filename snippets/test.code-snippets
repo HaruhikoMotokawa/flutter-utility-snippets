@@ -2,6 +2,7 @@
     //
     // INFO: テスト用のスニペットコード ==============================================================
     //
+    // prefixの始まりは't'で統一する
     // テスト用はあえてパッケージごとには分けない
     "Flutter Unit Test Template with Riverpod": {
         "prefix": "tunittesttemp",

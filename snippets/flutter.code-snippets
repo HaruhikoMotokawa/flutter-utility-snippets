@@ -2,6 +2,7 @@
   //
   // INFO: FlutterのWidgetを作成するスニペットコード ======================================================
   //
+  // prefixの始まりは'f'で統一する
   "Flutter Stateless Widget": {
     "prefix": "fstateless",
     "body": [
