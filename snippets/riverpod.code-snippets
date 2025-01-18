@@ -1,0 +1,157 @@
+{
+    //
+    // INFO: Riverpod関連のスニペットコード ==============================================================
+    //
+    "Riverpod KeepAlive Annotation": {
+        "prefix": "rkeepalive",
+        "body": [
+            "@Riverpod(keepAlive: true)"
+        ],
+        "description": "Riverpod KeepAliveアノテーションを作成"
+    },
+    "Riverpod Provider Template": {
+        "prefix": "rprovider",
+        "body": [
+            "import 'package:flutter_riverpod/flutter_riverpod.dart';",
+            "import 'package:riverpod_annotation/riverpod_annotation.dart';",
+            "",
+            "part '${TM_FILENAME_BASE}.g.dart';",
+            "",
+            "@riverpod",
+            "${1:dynamic} ${2:exampleProvider}(Ref ref) {",
+            "  return ${3:null};",
+            "}",
+            ""
+        ]
+    },
+    "Riverpod Async Provider Template": {
+        "prefix": "rasyncprovider",
+        "body": [
+            "import 'package:flutter_riverpod/flutter_riverpod.dart';",
+            "import 'package:riverpod_annotation/riverpod_annotation.dart';",
+            "",
+            "part '${TM_FILENAME_BASE}.g.dart';",
+            "",
+            "@riverpod",
+            "Future<${1:dynamic}> ${2:exampleProvider}(Ref ref) async {",
+            "  return ${3:null};",
+            "}",
+            ""
+        ]
+    },
+    "Riverpod Stream Provider Template": {
+        "prefix": "rstreamprovider",
+        "body": [
+            "import 'package:flutter_riverpod/flutter_riverpod.dart';",
+            "import 'package:riverpod_annotation/riverpod_annotation.dart';",
+            "",
+            "part '${TM_FILENAME_BASE}.g.dart';",
+            "",
+            "@riverpod",
+            "Stream<${1:dynamic}> ${2:exampleProvider}(Ref ref) async* {",
+            "  yield ${3:null};",
+            "}",
+            ""
+        ]
+    },
+    "Riverpod Notifier Template": {
+        "prefix": "rnotifier",
+        "body": [
+            "import 'package:riverpod_annotation/riverpod_annotation.dart';",
+            "",
+            "part '${TM_FILENAME_BASE}.g.dart';",
+            "",
+            "@riverpod",
+            "class ${1:ExampleNotifier} extends _$${1:ExampleNotifier} {",
+            "  @override",
+            "  void build() {}",
+            "}",
+            ""
+        ],
+    },
+    "Riverpod Listen Template": {
+        "prefix": "rlisten",
+        "body": [
+            "ref.listen(${1:provider}, (previous, next) {",
+            "  $0",
+            "});",
+            ""
+        ],
+        "description": "Riverpodのref.listenテンプレート"
+    },
+    "Riverpod Future Notifier Template": {
+        "prefix": "rfuturenotifier",
+        "body": [
+            "import 'package:riverpod_annotation/riverpod_annotation.dart';",
+            "",
+            "part '${TM_FILENAME_BASE}.g.dart';",
+            "",
+            "@riverpod",
+            "class ${1:ExampleNotifier} extends _$${1:ExampleNotifier} {",
+            "  @override",
+            "  Future<${2:dynamic}> build() async {",
+            "    return ${3:null};",
+            "  }",
+            "}",
+            ""
+        ],
+        "description": "Riverpod Future Notifierを作成"
+    },
+    "Riverpod Stream Notifier Template": {
+        "prefix": "rstreamnotifier",
+        "body": [
+            "import 'package:riverpod_annotation/riverpod_annotation.dart';",
+            "",
+            "part '${TM_FILENAME_BASE}.g.dart';",
+            "",
+            "@riverpod",
+            "class ${1:ExampleNotifier} extends _$${1:ExampleNotifier} {",
+            "  @override",
+            "  Stream<${2:dynamic}> build() async* {",
+            "    yield ${3:null};",
+            "  }",
+            "}",
+            ""
+        ],
+        "description": "Riverpod Stream Notifierを作成"
+    },
+    "Riverpod ConsumerWidget Template": {
+        "prefix": "rconsumerwidget",
+        "body": [
+            "import 'package:flutter/material.dart';",
+            "import 'package:flutter_riverpod/flutter_riverpod.dart';",
+            "",
+            "class ${1:Example} extends ConsumerWidget {",
+            "  const ${1:Example}({super.key});",
+            "",
+            "  @override",
+            "  Widget build(BuildContext context, WidgetRef ref) {",
+            "    return ${2:Container()};",
+            "  }",
+            "}",
+            ""
+        ],
+    },
+    "Riverpod Consumer Template": {
+        "prefix": "rconsumer",
+        "body": [
+            "Consumer(",
+            "  builder: (context, ref, child) {",
+            "    return ${1:const Placeholder()};",
+            "  },",
+            ");",
+            ""
+        ],
+    },
+    "Riverpod HookConsumer Template": {
+        "prefix": "rhookconsumer",
+        "body": [
+            "HookConsumer(",
+            "  builder: (context, ref, child) {",
+            "    return ${1:const Placeholder()};",
+            "  },",
+            ");",
+            ""
+        ],
+    },
+}

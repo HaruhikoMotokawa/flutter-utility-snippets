@@ -1,0 +1,249 @@
+{
+  //
+  // INFO: FlutterのWidgetを作成するスニペットコード ======================================================
+  //
+  "Flutter Stateless Widget": {
+    "prefix": "fstless",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "",
+      "class ${1:Example} extends StatelessWidget {",
+      "  const ${1:Example}({super.key});",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return Placeholder();",
+      "  }",
+      "}",
+      ""
+    ],
+  },
+  "Flutter Stateful Widget": {
+    "prefix": "fstful",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "",
+      "class ${1:Example} extends StatefulWidget {",
+      "  const ${1:Example}({super.key});",
+      "",
+      "  @override",
+      "  State<${1:Example}> createState() => _${1:Example}State();",
+      "}",
+      "",
+      "class _${1:Example}State extends State<${1:Example}> {",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return Placeholder();",
+      "  }",
+      "}",
+      ""
+    ],
+  },
+  "Flutter Scaffold Widget": {
+    "prefix": "fscaffold",
+    "body": [
+      "Scaffold(",
+      "  body: ${1:Placeholder()},",
+      ");"
+    ],
+  },
+  "Flutter Center Widget": {
+    "prefix": "fcenter",
+    "body": [
+      "Center(",
+      "  child: ${1:Placeholder()},",
+      ")"
+    ],
+  },
+  "Flutter Column Widget": {
+    "prefix": "fcolumn",
+    "body": [
+      "Column(",
+      "  children: [",
+      "    ${1:Placeholder()},",
+      "  ],",
+      ")"
+    ],
+  },
+  "Flutter Row Widget": {
+    "prefix": "frow",
+    "body": [
+      "Row(",
+      "  children: [",
+      "    ${1:Placeholder()},",
+      "  ],",
+      ")"
+    ],
+  },
+  "Flutter Stack Widget": {
+    "prefix": "fstack",
+    "body": [
+      "Stack(",
+      "  children: [",
+      "    ${1:Placeholder()},",
+      "  ],",
+      ")"
+    ],
+  },
+  "Flutter Container Widget": {
+    "prefix": "fcontainer",
+    "body": [
+      "Container(",
+      "  child: ${1:Placeholder()},",
+      ")"
+    ],
+  },
+  "Flutter Text Widget": {
+    "prefix": "ftext",
+    "body": [
+      "Text('${1:Text}')"
+    ],
+  },
+  "Flutter ElevatedButton Widget": {
+    "prefix": "felevated",
+    "body": [
+      "ElevatedButton(",
+      "  onPressed: () {},",
+      "  child: Text('${2:Button}'),",
+      ")"
+    ],
+  },
+  "Flutter TextButton Widget": {
+    "prefix": "ftextbutton",
+    "body": [
+      "TextButton(",
+      "  onPressed: () {},",
+      "  child: Text('${2:Button}'),",
+      ")"
+    ],
+  },
+  "Flutter IconButton Widget": {
+    "prefix": "ficonbutton",
+    "body": [
+      "IconButton(",
+      "  onPressed: () {},",
+      "  icon: Icon(Icons.${1:add}),",
+      ")"
+    ],
+  },
+  "Flutter Icon Widget": {
+    "prefix": "ficon",
+    "body": [
+      "Icon(Icons.${1:add})"
+    ],
+  },
+  "Flutter ListTile Widget": {
+    "prefix": "flisttile",
+    "body": [
+      "ListTile(",
+      "  title: Text('${1:Title}'),",
+      ")"
+    ],
+  },
+  "Flutter ListTileFull Widget": {
+    "prefix": "flisttilefull",
+    "body": [
+      "ListTile(",
+      "  leading: Icon(Icons.person),",
+      "  title: Text('Title'),",
+      "  subtitle: Text('Subtitle'),",
+      "  trailing: Icon(Icons.arrow_forward),",
+      "  onTap: () {},",
+      ");"
+    ]
+  },
+  "Flutter SizedBox Width Height Widget": {
+    "prefix": "fsizedboxwidthheight",
+    "body": [
+      "SizedBox(width: ${1:10.0}, height: ${2:10.0})"
+    ],
+  },
+  "Flutter SizedBox Width Widget": {
+    "prefix": "fsizedboxwidth",
+    "body": [
+      "SizedBox(width: ${1:10.0})"
+    ],
+  },
+  "Flutter SizedBox Height Widget": {
+    "prefix": "fsizedboxheight",
+    "body": [
+      "SizedBox(height: ${1:10.0})"
+    ],
+  },
+  "Flutter SizedBoxShrink Widget": {
+    "prefix": "fsizedboxshrink",
+    "body": [
+      "SizedBox.shrink()"
+    ],
+  },
+  "Flutter Expanded Widget": {
+    "prefix": "fexpanded",
+    "body": [
+      "Expanded(",
+      "  child: ${1:Placeholder()},",
+      ")"
+    ],
+  },
+  "Flutter Flexible Widget": {
+    "prefix": "fflexible",
+    "body": [
+      "Flexible(",
+      "  child: ${1:Placeholder()},",
+      ")"
+    ],
+  },
+  "Flutter Padding Widget": {
+    "prefix": "fpadding",
+    "body": [
+      "Padding(",
+      "  padding: EdgeInsets.all(${1:8.0}),",
+      "  child: ${2:Placeholder()},",
+      ")"
+    ],
+  },
+  "Flutter EdgeInsets.symmetric Horizontal": {
+    "prefix": "fedgeinsetshorizontal",
+    "body": [
+      "EdgeInsets.symmetric(horizontal: ${1:8.0})"
+    ],
+  },
+  "Flutter EdgeInsets.symmetric Vertical": {
+    "prefix": "fedgeinsetsvertical",
+    "body": [
+      "EdgeInsets.symmetric(vertical: ${1:8.0})"
+    ],
+  },
+  "Flutter EdgeInsets.all": {
+    "prefix": "fedgeinsetsall",
+    "body": [
+      "EdgeInsets.all(${1:8.0})"
+    ],
+  },
+  "Flutter Spacer Widget": {
+    "prefix": "fspacer",
+    "body": [
+      "Spacer()"
+    ],
+  },
+  "Flutter Divider Widget": {
+    "prefix": "fdivider",
+    "body": [
+      "Divider()"
+    ],
+  },
+  "Flutter Image Widget": {
+    "prefix": "fimage",
+    "body": [
+      "Image.asset('${1:assets/image.jpg}')"
+    ],
+  },
+  "Flutter AddPostFrameCallback": {
+    "prefix": "faddpostframe",
+    "body": [
+      "WidgetsBinding.instance.addPostFrameCallback((_) {",
+      "$0",
+      "});",
+    ],
+    "description": "WidgetsBinding.instance.addPostFrameCallbackのテンプレート"
+  },
+}

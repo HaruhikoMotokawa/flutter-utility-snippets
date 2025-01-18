@@ -1,0 +1,247 @@
+{
+    //
+    // INFO: Dartに関するスニペットコード ================================================================
+    //
+    "Dart Class": {
+        "prefix": "dclass",
+        "body": [
+            "class ${1:Example} {",
+            "",
+            "}",
+            ""
+        ]
+    },
+    "Dart Enum": {
+        "prefix": "denum",
+        "body": [
+            "enum ${1:Example} {",
+            "",
+            "}",
+            ""
+        ]
+    },
+    "Enum with Constructor": {
+        "prefix": "denumconstructor",
+        "body": [
+            "enum ${1:Example} {",
+            "  first('first'),",
+            "  second('second');",
+            "",
+            "  const ${1:Example}(this.text);",
+            "",
+            "  final String text;",
+            "}",
+            ""
+        ]
+    },
+    "Dart Extension": {
+        "prefix": "dextension",
+        "body": [
+            "extension ${1:ExtensionName} on ${2:Type} {",
+            "",
+            "}",
+            ""
+        ]
+    },
+    "Dart String": {
+        "prefix": "dstring",
+        "body": [
+            "String"
+        ],
+        "description": "dsg と入力すると String 素早くが出力できます"
+    },
+    //
+    // intとdouble,dynamic,Objectは普通に入力したほうが早いのでスニペットコードは作成しません
+    //
+    "Dart List": {
+        "prefix": "dlist",
+        "body": [
+            "List<${1:dynamic}>"
+        ]
+    },
+    "Dart Set": {
+        "prefix": "dset",
+        "body": [
+            "Set<${1:dynamic}>"
+        ]
+    },
+    "Dart Map": {
+        "prefix": "dmap",
+        "body": [
+            "Map<${1:dynamic}, ${2:dynamic}>"
+        ]
+    },
+    "Dart Future": {
+        "prefix": "dfuture",
+        "body": [
+            "Future<${1:void}>"
+        ]
+    },
+    "Dart Stream": {
+        "prefix": "dstream",
+        "body": [
+            "Stream<${1:dynamic}>"
+        ]
+    },
+    "Dart Void Method": {
+        "prefix": "dvoidmethod",
+        "body": [
+            "void ${1:methodName}() {",
+            "",
+            "}",
+            ""
+        ]
+    },
+    "Dart Future Method": {
+        "prefix": "dfuturemethod",
+        "body": [
+            "Future<${1:void}> ${2:methodName}() async {",
+            "",
+            "}",
+            ""
+        ]
+    },
+    "Dart Stream Method": {
+        "prefix": "dstreammethod",
+        "body": [
+            "Stream<${1:dynamic}> ${2:methodName}() async* {",
+            "",
+            "}",
+            ""
+        ]
+    },
+    "Dart Anonymous Function": {
+        "prefix": "danonfunc",
+        "body": [
+            "() {",
+            "  $0",
+            "}",
+            "",
+        ],
+        "description": "無名関数を作成"
+    },
+    "Dart Arrow Right Side": {
+        "prefix": "darrowright",
+        "body": [
+            "=> ${1:expression}",
+        ],
+        "description": "アロー関数の右側を作成"
+    },
+    "Dart If Statement": {
+        "prefix": "dif",
+        "body": [
+            "if (${1:condition}) {",
+            "  $0",
+            "}",
+            ""
+        ],
+    },
+    "Dart If Else Statement": {
+        "prefix": "difelese",
+        "body": [
+            "if (${1:condition}) {",
+            "  $0",
+            "} else {",
+            "  ",
+            "}",
+            ""
+        ],
+    },
+    "Dart Else If Statement": {
+        "prefix": "delseif",
+        "body": [
+            "else if (${0:condition}) {",
+            "  ",
+            "}",
+            ""
+        ],
+    },
+    "Dart Else Statement": {
+        "prefix": "delse",
+        "body": [
+            "else {",
+            "  ",
+            "}",
+            ""
+        ],
+    },
+    "Dart Switch Statement": {
+        "prefix": "dswitch",
+        "body": [
+            "switch (${1:condition}) {",
+            "  case ${2:value}:",
+            "    $3",
+            "  default:",
+            "    ",
+            "}",
+            ""
+        ],
+    },
+    "Dart Switch Expression": {
+        "prefix": "dswitchexpr",
+        "body": [
+            "final ${1:value} = switch (${2:condition}) {",
+            "  ${3:conditionA} => ${4:0},",
+            "  _ => ${5:1},",
+            "};",
+            ""
+        ]
+    },
+    "Dart For Loop": {
+        "prefix": "dfor",
+        "body": [
+            "for (var ${1:i} = 0; ${1:i} < ${2:count}; ${1:i}++) {",
+            "  $0",
+            "}",
+            ""
+        ],
+    },
+    "Dart For In Loop": {
+        "prefix": "dforin",
+        "body": [
+            "for (var ${1:item} in ${2:items}) {",
+            "  $0",
+            "}",
+            ""
+        ],
+    },
+    "Dart While Loop": {
+        "prefix": "dwhile",
+        "body": [
+            "while (${1:condition}) {",
+            "  $0",
+            "}",
+            ""
+        ],
+    },
+    "Dart Try-On-Catch": {
+        "prefix": "dtryoncatch",
+        "body": [
+            "try {",
+            "",
+            "} on Exception catch (e) {",
+            "  debugPrint(e.toString());",
+            "}",
+            ""
+        ],
+    },
+    "Dart Try-On-Catch-Finally": {
+        "prefix": "dtryoncatchfinally",
+        "body": [
+            "try {",
+            "",
+            "} on Exception catch (e) {",
+            "  debugPrint(e.toString());",
+            "} finally {",
+            "  ",
+            "}",
+            ""
+        ],
+    },
+    "Dart Callback Function": {
+        "prefix": "dcallback",
+        "body": [
+            "final void Function(${1:dynamic} value) ${2:callback};",
+        ],
+    },
+}

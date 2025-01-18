@@ -1,0 +1,61 @@
+{
+    //
+    // INFO: Hooks関連のスニペットコード ==============================================================
+    //
+    "Hooks HookWidget Template": {
+        "prefix": "hhookwidget",
+        "body": [
+            "import 'package:flutter/material.dart';",
+            "import 'package:flutter_hooks/flutter_hooks.dart';",
+            "",
+            "class ${1:Example} extends HookWidget {",
+            "  const ${1:Example}({super.key});",
+            "",
+            "  @override",
+            "  Widget build(BuildContext context) {",
+            "    return ${2:Container()};",
+            "  }",
+            "}",
+            ""
+        ],
+    },
+    "Hooks UseEffect Template": {
+        "prefix": "huseeffect",
+        "body": [
+            "useEffect(",
+            "  () {",
+            "    $0",
+            "    return null;",
+            "  },",
+            "  const [],",
+            ");",
+        ],
+    },
+    "Hooks UseState Template": {
+        "prefix": "husestate",
+        "body": [
+            "final ${1:state} = useState(${2:initialValue});",
+        ],
+    },
+    "Hooks UseTextEditingController Template": {
+        "prefix": "husetextcontroller",
+        "body": [
+            "final controller = useTextEditingController();",
+            "final textIsEmpty =",
+            "    useListenableSelector(controller, () => controller.text.isEmpty);",
+            ""
+        ],
+        "description": "useTextEditingControllerとuseListenableSelectorのセットテンプレート"
+    },
+    "Hooks UseOnAppLifecycleStateChange Template": {
+        "prefix": "huseonapplifecycle",
+        "body": [
+            "useOnAppLifecycleStateChange((oldState, newState) async {",
+            "  if (newState == AppLifecycleState.resumed) {",
+            "",
+            "  }",
+            "});",
+            ""
+        ],
+    },
+}

@@ -13,14 +13,30 @@
     "snippets": [
       {
         "language": "dart",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/flutter.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/dart.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/riverpod.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/hooks.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/freezed.code-snippets"
       }
     ]
   },
   "repository": {
-  "type": "git",
-  "url": "https://github.com/HaruhikoMotokawa/flutter-utility-snippets.git"
-},
+    "type": "git",
+    "url": "https://github.com/HaruhikoMotokawa/flutter-utility-snippets.git"
+  },
   "publisher": "HaruhikoMotokawa",
   "icon": "flutter_utility_snippets.png"
 }
