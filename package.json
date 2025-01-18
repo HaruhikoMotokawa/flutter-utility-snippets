@@ -34,6 +34,10 @@
       {
         "language": "dart",
         "path": "./snippets/test.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/comment.code-snippets"
       }
     ]
   },

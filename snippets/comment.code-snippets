@@ -1,0 +1,51 @@
+{
+    "TODO Comment": {
+        "prefix": "ctodo",
+        "body": [
+            "// TODO: ${1:comments}"
+        ],
+        "description": "Adds a TODO comment"
+    },
+    "INFO Comment": {
+        "prefix": "cinfo",
+        "body": [
+            "// INFO: ${1:comments}"
+        ],
+        "description": "Adds an INFO comment"
+    },
+    "HACK Comment": {
+        "prefix": "chack",
+        "body": [
+            "// HACK: ${1:comments}"
+        ],
+        "description": "Adds a HACK comment"
+    },
+    "FIXME Comment": {
+        "prefix": "cfixme",
+        "body": [
+            "// FIXME: ${1:comments}"
+        ],
+        "description": "Adds a FIXME comment"
+    },
+    "Coverage Ignore File": {
+        "prefix": "ccoverignorefile",
+        "body": [
+            "// coverage:ignore-file"
+        ],
+        "description": "Adds a coverage ignore file comment"
+    },
+    "Coverage Ignore Start": {
+        "prefix": "ccoverignorestart",
+        "body": [
+            "// coverage:ignore-start"
+        ],
+        "description": "Adds a coverage ignore start comment"
+    },
+    "Coverage Ignore End": {
+        "prefix": "ccoverignoreend",
+        "body": [
+            "// coverage:ignore-end"
+        ],
+        "description": "Adds a coverage ignore end comment"
+    }
+}
