@@ -3,7 +3,7 @@
   // INFO: FlutterのWidgetを作成するスニペットコード ======================================================
   //
   "Flutter Stateless Widget": {
-    "prefix": "fstless",
+    "prefix": "fstateless",
     "body": [
       "import 'package:flutter/material.dart';",
       "",
@@ -17,9 +17,25 @@
       "}",
       ""
     ],
+    "description": "StatelessWidgetのテンプレート"
+  },
+  "Flutter Stateless Widget No Import": {
+    "prefix": "fstatelessnoimport",
+    "body": [
+      "class ${1:Example} extends StatelessWidget {",
+      "  const ${1:Example}({super.key});",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return Placeholder();",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "StatelessWidgetのテンプレート（importなし）"
   },
   "Flutter Stateful Widget": {
-    "prefix": "fstful",
+    "prefix": "fstateful",
     "body": [
       "import 'package:flutter/material.dart';",
       "",
@@ -38,6 +54,27 @@
       "}",
       ""
     ],
+    "description": "StatefulWidgetのテンプレート"
+  },
+  "Flutter Stateful Widget No Import": {
+    "prefix": "fstatefulnoimport",
+    "body": [
+      "class ${1:Example} extends StatefulWidget {",
+      "  const ${1:Example}({super.key});",
+      "",
+      "  @override",
+      "  State<${1:Example}> createState() => _${1:Example}State();",
+      "}",
+      "",
+      "class _${1:Example}State extends State<${1:Example}> {",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return Placeholder();",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "StatefulWidgetのテンプレート（importなし）"
   },
   "Flutter Scaffold Widget": {
     "prefix": "fscaffold",
@@ -46,6 +83,7 @@
       "  body: ${1:Placeholder()},",
       ");"
     ],
+    "description": "Scaffoldのテンプレート"
   },
   "Flutter Center Widget": {
     "prefix": "fcenter",
@@ -54,6 +92,7 @@
       "  child: ${1:Placeholder()},",
       ")"
     ],
+    "description": "Centerのテンプレート"
   },
   "Flutter Column Widget": {
     "prefix": "fcolumn",
@@ -64,6 +103,7 @@
       "  ],",
       ")"
     ],
+    "description": "Columnのテンプレート"
   },
   "Flutter Row Widget": {
     "prefix": "frow",
@@ -74,6 +114,7 @@
       "  ],",
       ")"
     ],
+    "description": "Rowのテンプレート"
   },
   "Flutter Stack Widget": {
     "prefix": "fstack",
@@ -84,6 +125,7 @@
       "  ],",
       ")"
     ],
+    "description": "Stackのテンプレート"
   },
   "Flutter Container Widget": {
     "prefix": "fcontainer",
@@ -92,12 +134,14 @@
       "  child: ${1:Placeholder()},",
       ")"
     ],
+    "description": "Containerのテンプレート"
   },
   "Flutter Text Widget": {
     "prefix": "ftext",
     "body": [
       "Text('${1:Text}')"
     ],
+    "description": "Textのテンプレート"
   },
   "Flutter ElevatedButton Widget": {
     "prefix": "felevated",
@@ -107,6 +151,7 @@
       "  child: Text('${2:Button}'),",
       ")"
     ],
+    "description": "ElevatedButtonのテンプレート"
   },
   "Flutter TextButton Widget": {
     "prefix": "ftextbutton",
@@ -116,6 +161,7 @@
       "  child: Text('${2:Button}'),",
       ")"
     ],
+    "description": "TextButtonのテンプレート"
   },
   "Flutter IconButton Widget": {
     "prefix": "ficonbutton",
@@ -125,12 +171,14 @@
       "  icon: Icon(Icons.${1:add}),",
       ")"
     ],
+    "description": "IconButtonのテンプレート"
   },
   "Flutter Icon Widget": {
     "prefix": "ficon",
     "body": [
       "Icon(Icons.${1:add})"
     ],
+    "description": "Iconのテンプレート"
   },
   "Flutter ListTile Widget": {
     "prefix": "flisttile",
@@ -139,6 +187,7 @@
       "  title: Text('${1:Title}'),",
       ")"
     ],
+    "description": "ListTileのテンプレート"
   },
   "Flutter ListTileFull Widget": {
     "prefix": "flisttilefull",
@@ -150,31 +199,36 @@
       "  trailing: Icon(Icons.arrow_forward),",
       "  onTap: () {},",
       ");"
-    ]
+    ],
+    "description": "ListTileのフルテンプレート"
   },
   "Flutter SizedBox Width Height Widget": {
     "prefix": "fsizedboxwidthheight",
     "body": [
       "SizedBox(width: ${1:10.0}, height: ${2:10.0})"
     ],
+    "description": "SizedBoxの幅と高さを指定するテンプレート"
   },
   "Flutter SizedBox Width Widget": {
     "prefix": "fsizedboxwidth",
     "body": [
       "SizedBox(width: ${1:10.0})"
     ],
+    "description": "SizedBoxの幅を指定するテンプレート"
   },
   "Flutter SizedBox Height Widget": {
     "prefix": "fsizedboxheight",
     "body": [
       "SizedBox(height: ${1:10.0})"
     ],
+    "description": "SizedBoxの高さを指定するテンプレート"
   },
   "Flutter SizedBoxShrink Widget": {
     "prefix": "fsizedboxshrink",
     "body": [
       "SizedBox.shrink()"
     ],
+    "description": "SizedBox.shrink()のテンプレート"
   },
   "Flutter Expanded Widget": {
     "prefix": "fexpanded",
@@ -183,6 +237,7 @@
       "  child: ${1:Placeholder()},",
       ")"
     ],
+    "description": "Expandedのテンプレート"
   },
   "Flutter Flexible Widget": {
     "prefix": "fflexible",
@@ -191,6 +246,7 @@
       "  child: ${1:Placeholder()},",
       ")"
     ],
+    "description": "Flexibleのテンプレート"
   },
   "Flutter Padding Widget": {
     "prefix": "fpadding",
@@ -200,42 +256,49 @@
       "  child: ${2:Placeholder()},",
       ")"
     ],
+    "description": "Paddingのテンプレート"
   },
   "Flutter EdgeInsets.symmetric Horizontal": {
     "prefix": "fedgeinsetshorizontal",
     "body": [
       "EdgeInsets.symmetric(horizontal: ${1:8.0})"
     ],
+    "description": "EdgeInsets.symmetric(horizontal: 8.0)のテンプレート"
   },
   "Flutter EdgeInsets.symmetric Vertical": {
     "prefix": "fedgeinsetsvertical",
     "body": [
       "EdgeInsets.symmetric(vertical: ${1:8.0})"
     ],
+    "description": "EdgeInsets.symmetric(vertical: 8.0)のテンプレート"
   },
   "Flutter EdgeInsets.all": {
     "prefix": "fedgeinsetsall",
     "body": [
       "EdgeInsets.all(${1:8.0})"
     ],
+    "description": "EdgeInsets.all(8.0)のテンプレート"
   },
   "Flutter Spacer Widget": {
     "prefix": "fspacer",
     "body": [
       "Spacer()"
     ],
+    "description": "Spacerのテンプレート"
   },
   "Flutter Divider Widget": {
     "prefix": "fdivider",
     "body": [
       "Divider()"
     ],
+    "description": "Dividerのテンプレート"
   },
   "Flutter Image Widget": {
     "prefix": "fimage",
     "body": [
       "Image.asset('${1:assets/image.jpg}')"
     ],
+    "description": "Imageのテンプレート"
   },
   "Flutter AddPostFrameCallback": {
     "prefix": "faddpostframe",
@@ -245,5 +308,13 @@
       "});",
     ],
     "description": "WidgetsBinding.instance.addPostFrameCallbackのテンプレート"
+  },
+  // BuildContext contextのスニペット
+  "Flutter BuildContext": {
+    "prefix": "fbuildcontext",
+    "body": [
+      "BuildContext context",
+    ],
+    "description": "BuildContext contextのスニペット"
   },
 }
