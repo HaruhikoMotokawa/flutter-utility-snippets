@@ -13,6 +13,8 @@ fstatelessnoimport
 rasyncprovidernoimport
 rprovidernoimport
 rstreamprovidernoimport
+rswitch
+rwhen
 rwidgetref
 tgroup
 tmockclass
