@@ -1,5 +1,6 @@
 # Flutter Utility Snippets
 
+
 Flutter Utility Snippets is a VSCode extension that provides a collection of frequently used snippets to enhance development efficiency in Flutter and Dart. This extension includes snippets for:
 
 - Flutter: Basic widgets and structures (StatelessWidget, StatefulWidget, Scaffold, etc.)
@@ -9,6 +10,8 @@ Flutter Utility Snippets is a VSCode extension that provides a collection of fre
 - Freezed: Templates for Freezed models and JSON support
 
 With this snippet collection, you can speed up your coding process and focus more on building your application.
+
+![Image](https://github.com/user-attachments/assets/0bc56022-4ed4-4111-b1c0-5e0837e78d6a)
 
 ## Main Features
 1. Snippet Categories
@@ -147,6 +150,10 @@ Riverpod-related snippets use prefixes starting with `r`.
 
 **Utility**
 - `rwidgetref`: Generates a WidgetRef ref declaration.
+
+**Patterns**
+- rwhen: Generates a Riverpod AsyncValue.when template to handle data, loading, and error states.
+- rswitch: Generates a switch statement template for AsyncValue to handle AsyncError, AsyncData, and the default case.
 
 ---
 ### Hooks

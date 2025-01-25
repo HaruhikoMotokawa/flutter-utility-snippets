@@ -2,7 +2,7 @@
   "name": "flutter-utility-snippets",
   "displayName": "Flutter Utility Snippets",
   "description": "A comprehensive snippet collection for Flutter and Dart development, including Riverpod, Hooks, Freezed, and test utilities. Simplify your workflow and boost productivity with frequently used code snippets.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "engines": {
     "vscode": "^1.96.0"
   },
