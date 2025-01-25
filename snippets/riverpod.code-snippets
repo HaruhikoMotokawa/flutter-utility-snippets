@@ -198,4 +198,28 @@
         ],
         "description": "RiverpodのWidgetRefを作成"
     },
+    "Riverpod AsyncValue When Template": {
+        "prefix": "rwhen",
+        "body": [
+            "${1:asyncValue}.when(",
+            "  data: (data) => Text('Data: $data'),",
+            "  loading: () => const CircularProgressIndicator(),",
+            "  error: (error, stackTrace) => Text('Error: $error, $stackTrace')",
+            ");"
+        ],
+        "description": "Riverpod AsyncValue.when テンプレート"
+    },
+    "Riverpod AsyncValue Switch Template": {
+        "prefix": "rswitch",
+        "body": [
+            "switch (${1:asyncValue}) {",
+            "  AsyncError(:final error, :final stackTrace) =>",
+            "    Text('Error: $error, StackTrace: $stackTrace'),",
+            "  AsyncData(:final value) =>",
+            "    Text('Data: $value'),",
+            "  _ => const CircularProgressIndicator(),",
+            "}"
+        ],
+        "description": "Riverpod AsyncValue.switch テンプレート\n\nこのテンプレートは Riverpod の AsyncValue に基づく switch 文を簡潔に作成するためのデフォルト設定を表現します。\n- **skipLoadingOnReload**: `false`\n- **skipLoadingOnRefresh**: `true`\n- **skipError**: `false`"
+    }
 }
