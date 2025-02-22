@@ -189,6 +189,7 @@ Test-related snippets use prefixes starting with `t`.
 - `ttest`: Generates a Flutter test template.
 - `twidgets`: Generates a Flutter testWidgets template.
 - `twidgetspatrol`: Generates a Flutter patrolWidgetTest template.
+- `tsetup`: Generates a Flutter setUp template for test setup.
 
 **Async Test Operations**
 - `trunasyncpatrol`: Generates a runAsync template for Patrol.

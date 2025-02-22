@@ -2,6 +2,19 @@
 
 All notable changes to the "flutter-utility-snippets" extension will be documented in this file.
 
+## 1.3.0 (2025-02-22)
+### Updates
+- **Existing Snippets Updated**:
+  1. **Flutter Unit Test Template with Riverpod**
+     - Removed the outer `group` structure for improved simplicity.
+  2. **Flutter Widget Test Template with Riverpod**
+     - Removed the outer `group` structure.
+  3. **Flutter Widget Test Template with Patrol and Riverpod**
+     - Removed the outer `group` structure.
+- **New Snippet Added**:
+  4. **Flutter setUp Template**
+     - A standalone snippet for `setUp` blocks in unit and widget tests.
+
 ## 1.2.0 (2025-01-25)
 ### Updates
 - **New Snippets Added**:
